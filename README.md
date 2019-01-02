@@ -61,9 +61,10 @@ Guide (linux)
 
 *   Build html documentation
     ```
+    Sphinx workaround: change python27\Lib\site-packages\sphinx\util\inspect.py:729 => to catch all exceptions and return )
     $ make html
-    ( windows)
-    $ sphinx-build -M html source build -j auto
+    ( windows) 
+    $ sphinx-build -b html source html -j auto
     ```
 
 *   Now you have nice online documentation of Houdini Python modules, you will find it in `build/html` directory. You can push it to `gh-pages` branch.
