@@ -14,11 +14,85 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../python2.7libs'))
+#sys.path.insert(0, os.path.abspath(os.path.join(os.environ['KL_HOUDIR'], 'houdini', 'python2.7libs')))
+
+def enableHouModule():
+    '''Set up the environment so that "import hou" works.'''
+    import sys, os
+    os.environ['HFS'] = os.environ['KL_HOUDIR']
+    os.environ['PATH'] = os.environ['PATH'] + os.pathsep + os.path.abspath(os.path.join(os.environ['KL_HOUDIR'], 'bin'))
+    sys.path.append( os.path.abspath(os.path.join(os.environ['KL_HOUDIR'], 'bin')) )
+
+    # Importing hou will load in Houdini's libraries and initialize Houdini.
+    # In turn, Houdini will load any HDK extensions written in C++.  These
+    # extensions need to link against Houdini's libraries, so we need to
+    # make sure that the symbols from Houdini's libraries are visible to
+    # other libraries that Houdini loads.  So, we adjust Python's dlopen
+    # flags before importing hou.
+    if hasattr(sys, "setdlopenflags"):
+        old_dlopen_flags = sys.getdlopenflags()
+        import DLFCN
+        sys.setdlopenflags(old_dlopen_flags | DLFCN.RTLD_GLOBAL)
+
+    try:
+        import hou
+    except ImportError:
+        # Add $HFS/houdini/python2.7libs to sys.path so Python can find the
+        # hou module.
+        sys.path.append(os.environ['HFS'] + "/houdini/python%d.%dlibs" % sys.version_info[:2])
+        import hou
+    finally:
+        if hasattr(sys, "setdlopenflags"):
+            sys.setdlopenflags(old_dlopen_flags)
+
+enableHouModule()
+#import hou
 
 
-autodoc_mock_imports = ["OpenGL", "PySide2", "PyQt4", "hou", "whoosh", "assetauthortools", "defaulttoolmenus", "autorigs.modules.master.masterModule", "autorigs.modules.spine.spineModule", "autorigs.modules.arm.armModule", "autorigs.modules.head.headModule", "autorigs.modules.basicFace.jaw.jawModule", "autorigs.modules.leg.legModule", "autorigs.modules.quadHead.quadHeadModule", "autorigs.modules.quadleg.quadLegModule", "autorigs.modules.simpleexample1.simpleModule", "autorigs.modules.tail.tailModule", "bookish.search", "autorigs.modules.foot.footModule", "autorigs.modules.hand.handModule", "autorigs.asset.geometry.buildGeometryGuide", "autorigs.modules.basicFace.basicFaceModule", "autorigs.modules.quadFoot.quadFootModule", "flask", "charpicker.cpglobals", "charpicker.mainwidget", "generateHDAToolsForOTL", "generate_proto", "opnode_sum", "perfmon_sum", "click", "houpythonportion", "hdefereval", "houdinihelp.cli", "rpyc", "mako"]
+autodoc_mock_imports = [
+    "OpenGL",
+    "PySide2",
+    "PyQt4",
+    "whoosh",
+    "flask",
+    "mako",
+    "click",
+    "PIL",
 
+    "bookish.search",
+    "generateHDAToolsForOTL",
+    "generate_proto",
+    "perfmon_sum",
+
+    #"hou",
+    "_hou",
+    #"assetauthortools",
+    #"defaulttoolmenus",
+    #"autorigs.asset.geometry.buildGeometryGuide",
+    #"autorigs.modules.master.masterModule",
+    #"autorigs.modules.spine.spineModule",
+    #"autorigs.modules.arm.armModule",
+    #"autorigs.modules.head.headModule",
+    #"autorigs.modules.basicFace.jaw.jawModule",
+    #"autorigs.modules.leg.legModule",
+    #"autorigs.modules.quadHead.quadHeadModule",
+    #"autorigs.modules.quadleg.quadLegModule",
+    #"autorigs.modules.simpleexample1.simpleModule",
+    #"autorigs.modules.tail.tailModule",
+    #"autorigs.modules.foot.footModule",
+    #"autorigs.modules.hand.handModule",
+    #"autorigs.modules.basicFace.basicFaceModule",
+    #"autorigs.modules.quadFoot.quadFootModule",
+    #"charpicker.cpglobals",
+    #"charpicker.mainwidget",
+    #"opnode_sum",
+    #"houpythonportion",
+    #"hdefereval",
+    #"houdinihelp.cli",
+    #"rpyc",
+]
+
+#autodoc_mock_imports = ["OpenGL","PySide2", "PyQt4", "hou", "_hou", "whoosh", "bookish.search", "flask", "generateHDAToolsForOTL", "generate_proto", "perfmon_sum", "click", "mako"]
 
 # -- Project information -----------------------------------------------------
 
@@ -29,7 +103,7 @@ author = u'jtomori'
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'16.5.496'
+release = u'17.0.439'
 
 
 # -- General configuration ---------------------------------------------------
@@ -79,13 +153,27 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+# html_theme_options = {
+#     'canonical_url': '',
+#     'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
+#     'logo_only': False,
+#     'display_version': True,
+#     'prev_next_buttons_location': 'bottom',
+#     'style_external_links': False,
+#     'vcs_pageview_mode': '',
+#     # Toc options
+#     'collapse_navigation': True,
+#     'sticky_navigation': True,
+#     'navigation_depth': 4,
+#     'includehidden': True,
+#     'titles_only': False
+# }
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

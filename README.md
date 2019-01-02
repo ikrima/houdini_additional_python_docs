@@ -27,6 +27,7 @@ Guide (linux)
 *   Install *Sphinx* (e.g. using *pip*)
     ```
     $ pip install sphinx
+    $ pip install sphinx_rtd_theme
     ```
 
 *   Clone this repo and enter it
@@ -55,12 +56,14 @@ Guide (linux)
 
 *   Generate *rst* files from modules
     ```
-    $ sphinx-apidoc -o source python2.7libs
+    $ sphinx-apidoc -o source "%KL_HOUDIR%\\houdini\\python2.7libs"
     ```
 
 *   Build html documentation
     ```
     $ make html
+    ( windows)
+    $ sphinx-build -M html source build -j auto
     ```
 
 *   Now you have nice online documentation of Houdini Python modules, you will find it in `build/html` directory. You can push it to `gh-pages` branch.
