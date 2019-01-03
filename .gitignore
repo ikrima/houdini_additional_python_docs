@@ -1,1 +1,7 @@
+python2.7libs
+build
+doctrees
+html
 _sources
+source/*.rst
+!source/index.rst

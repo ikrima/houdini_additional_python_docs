@@ -1,0 +1,1135 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>whoosh.lang.snowball package &mdash; Houdini Python modules 17.0.439 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="whoosh.matching package" href="whoosh.matching.html" />
+    <link rel="prev" title="whoosh.lang package" href="whoosh.lang.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Houdini Python modules
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">python2.7libs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="EC2.html">EC2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="alignutils.html">alignutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetauthortools.html">assetauthortools module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="assetdownload.html">assetdownload module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autorig.html">autorig package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="autorig.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autorig.html#module-autorig.isbodypart">autorig.isbodypart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autorig.html#module-autorig.mocapbodypart">autorig.mocapbodypart module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autorig.html#module-autorig.mocapgui">autorig.mocapgui module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autorig.html#module-autorig.mocappartmapping">autorig.mocappartmapping module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autorig.html#module-autorig.mocaprigutils">autorig.mocaprigutils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autorig.html#module-autorig.rigtoolutils">autorig.rigtoolutils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autorig.html#module-autorig.utils">autorig.utils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autorig.html#module-autorig">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="autorigs.html">autorigs package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="autorigs.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="autorigs.asset.html">autorigs.asset package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.asset.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.asset.geometry.html">autorigs.asset.geometry package</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.asset.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.asset.html#autorigs-asset-autorigsasset-module">autorigs.asset.autoRigsAsset module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.asset.html#autorigs-asset-autorigsmodules-module">autorigs.asset.autoRigsModules module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.asset.html#autorigs-asset-autorigssettings-module">autorigs.asset.autoRigsSettings module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.asset.html#autorigs-asset-defaultproperties-module">autorigs.asset.defaultProperties module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.asset.html#autorigs-asset-modulefactory-module">autorigs.asset.moduleFactory module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.asset.html#autorigs-asset-moduleinfos-module">autorigs.asset.moduleInfos module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.asset.html#module-autorigs.asset">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="autorigs.modules.html">autorigs.modules package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.modules.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.advancedFace.html">autorigs.modules.advancedFace package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.arm.html">autorigs.modules.arm package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.base.html">autorigs.modules.base package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.basicFace.html">autorigs.modules.basicFace package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.extremity.html">autorigs.modules.extremity package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.foot.html">autorigs.modules.foot package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.geometry.html">autorigs.modules.geometry package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.hand.html">autorigs.modules.hand package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.head.html">autorigs.modules.head package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.jaw.html">autorigs.modules.jaw package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.leg.html">autorigs.modules.leg package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.limb.html">autorigs.modules.limb package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.master.html">autorigs.modules.master package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.quadFoot.html">autorigs.modules.quadFoot package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.quadHead.html">autorigs.modules.quadHead package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.quadleg.html">autorigs.modules.quadleg package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.simpleexample1.html">autorigs.modules.simpleexample1 package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.spine.html">autorigs.modules.spine package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.modules.tail.html">autorigs.modules.tail package</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.modules.html#module-autorigs.modules">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="autorigs.ui.html">autorigs.ui package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-modulelistitemwidget-module">autorigs.ui.moduleListItemWidget module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.moduleTabsWidget">autorigs.ui.moduleTabsWidget module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.moduleUiTab">autorigs.ui.moduleUiTab module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uiassetcontainer-module">autorigs.ui.uiAssetContainer module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uicharactersettings-module">autorigs.ui.uiCharacterSettings module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uicharactertabs-module">autorigs.ui.uiCharacterTabs module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uicreatetabs-module">autorigs.ui.uiCreateTabs module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiDropDownMenu">autorigs.ui.uiDropDownMenu module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uigeometrycapture-module">autorigs.ui.uiGeometryCapture module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uigeometrycontainer-module">autorigs.ui.uiGeometryContainer module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uigeometryinfo-module">autorigs.ui.uiGeometryInfo module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uigeometryparams-module">autorigs.ui.uiGeometryParams module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uimenubar-module">autorigs.ui.uiMenuBar module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uimodulelist-module">autorigs.ui.uiModuleList module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uinewautorigdialog-module">autorigs.ui.uiNewAutorigDialog module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamColor">autorigs.ui.uiParamColor module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamComboBox">autorigs.ui.uiParamComboBox module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamDescriptions">autorigs.ui.uiParamDescriptions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamFactory">autorigs.ui.uiParamFactory module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamFile">autorigs.ui.uiParamFile module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamFloat">autorigs.ui.uiParamFloat module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamInt">autorigs.ui.uiParamInt module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamLabelButton">autorigs.ui.uiParamLabelButton module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamLocatorWidget">autorigs.ui.uiParamLocatorWidget module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamMultiParm">autorigs.ui.uiParamMultiParm module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamName">autorigs.ui.uiParamName module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#autorigs-ui-uiparamnodepicker-module">autorigs.ui.uiParamNodePicker module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamNum">autorigs.ui.uiParamNum module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamOperator">autorigs.ui.uiParamOperator module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParamString">autorigs.ui.uiParamString module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiParentComboMenu">autorigs.ui.uiParentComboMenu module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui.uiToggleButtonsWidget">autorigs.ui.uiToggleButtonsWidget module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.ui.html#module-autorigs.ui">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="autorigs.utils.html">autorigs.utils package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="autorigs.utils.rigtoolutils.html">autorigs.utils.rigtoolutils package</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.autoRigsBuilderCtrlUtils">autorigs.utils.autoRigsBuilderCtrlUtils module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.autoRigsBuilderInterfaceUtils">autorigs.utils.autoRigsBuilderInterfaceUtils module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.autoRigsBuilderNameUtils">autorigs.utils.autoRigsBuilderNameUtils module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.autoRigsBuilderUtils">autorigs.utils.autoRigsBuilderUtils module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.autoRigsColors">autorigs.utils.autoRigsColors module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.buildGuideHelper">autorigs.utils.buildGuideHelper module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.captureutils">autorigs.utils.captureutils module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.faceutils">autorigs.utils.faceutils module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.fkcontrols">autorigs.utils.fkcontrols module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.geometryutils">autorigs.utils.geometryutils module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.guideOptionsHelper">autorigs.utils.guideOptionsHelper module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.guideParamsHelper">autorigs.utils.guideParamsHelper module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.iktwistcontrols">autorigs.utils.iktwistcontrols module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils.rigutils">autorigs.utils.rigutils module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="autorigs.utils.html#module-autorigs.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="autorigs.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autorigs.html#module-autorigs.arglobals">autorigs.arglobals module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autorigs.html#autorigs-maingui-module">autorigs.mainGUI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="autorigs.html#module-autorigs">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bakeanimation.html">bakeanimation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bookish.html">bookish package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bookish.avenue.html">bookish.avenue package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="bookish.avenue.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.avenue.html#module-bookish.avenue.avenue">bookish.avenue.avenue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.avenue.html#module-bookish.avenue.patterns">bookish.avenue.patterns module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.avenue.html#module-bookish.avenue">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="bookish.edit.html">bookish.edit package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="bookish.edit.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.edit.html#module-bookish.edit.checkpoints">bookish.edit.checkpoints module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.edit.html#module-bookish.edit">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="bookish.grammars.html">bookish.grammars package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="bookish.grammars.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.grammars.html#module-bookish.grammars.avenue">bookish.grammars.avenue module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.grammars.html#module-bookish.grammars.meta">bookish.grammars.meta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.grammars.html#module-bookish.grammars.wiki">bookish.grammars.wiki module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.grammars.html#module-bookish.grammars">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="bookish.parser.html">bookish.parser package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="bookish.parser.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.parser.html#module-bookish.parser.bootstrap">bookish.parser.bootstrap module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.parser.html#module-bookish.parser.builder">bookish.parser.builder module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.parser.html#module-bookish.parser.rules">bookish.parser.rules module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.parser.html#module-bookish.parser">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="bookish.text.html">bookish.text package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="bookish.text.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.text.html#module-bookish.text.convert">bookish.text.convert module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.text.html#module-bookish.text.textify">bookish.text.textify module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.text.html#module-bookish.text">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="bookish.wiki.html">bookish.wiki package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="bookish.wiki.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.wiki.html#module-bookish.wiki.config">bookish.wiki.config module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.wiki.html#module-bookish.wiki.includes">bookish.wiki.includes module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.wiki.html#module-bookish.wiki.langpaths">bookish.wiki.langpaths module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.wiki.html#module-bookish.wiki.pipeline">bookish.wiki.pipeline module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.wiki.html#module-bookish.wiki.styles">bookish.wiki.styles module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.wiki.html#module-bookish.wiki.wikipages">bookish.wiki.wikipages module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="bookish.wiki.html#module-bookish.wiki">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.coloring">bookish.coloring module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.compat">bookish.compat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.config">bookish.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.flaskapp">bookish.flaskapp module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.flasksupport">bookish.flasksupport module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.functions">bookish.functions module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.i18n">bookish.i18n module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.paths">bookish.paths module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.search">bookish.search module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.stores">bookish.stores module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.testing">bookish.testing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish.util">bookish.util module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bookish.html#module-bookish">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bvhviewer.html">bvhviewer package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bvhviewer.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bvhviewer.html#module-bvhviewer.box">bvhviewer.box module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bvhviewer.html#module-bvhviewer.bvhtree">bvhviewer.bvhtree module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bvhviewer.html#module-bvhviewer.bvhviewer">bvhviewer.bvhviewer module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bvhviewer.html#module-bvhviewer.colormanager">bvhviewer.colormanager module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bvhviewer.html#module-bvhviewer">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="canvaseventtypes.html">canvaseventtypes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="channelwranglesnippet.html">channelwranglesnippet module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="charactertoolutils.html">charactertoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="charpicker.html">charpicker package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="charpicker.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="charpicker.html#charpicker-controlbutton-module">charpicker.controlbutton module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="charpicker.html#charpicker-controlslider-module">charpicker.controlslider module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="charpicker.html#charpicker-cpglobals-module">charpicker.cpglobals module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="charpicker.html#module-charpicker.gridsnap">charpicker.gridsnap module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="charpicker.html#charpicker-mainwidget-module">charpicker.mainwidget module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="charpicker.html#charpicker-tabview-module">charpicker.tabview module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="charpicker.html#charpicker-tabwindow-module">charpicker.tabwindow module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="charpicker.html#module-charpicker">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chopnettoolutils.html">chopnettoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="choptoolutils.html">choptoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloud.html">cloud module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloudEULA.html">cloudEULA module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloudsubmit.html">cloudsubmit module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloudtoolutils.html">cloudtoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="colorschemeutils.html">colorschemeutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contextoptionseditor.html">contextoptionseditor module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cop2toolutils.html">cop2toolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="copnettoolutils.html">copnettoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="crowds.html">crowds package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="crowds.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crowds.html#crowds-bakeagentdialog-module">crowds.bakeagentdialog module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crowds.html#module-crowds">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="crowdstoolutils.html">crowdstoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dbg.html">dbg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="defaultstatetools.html">defaultstatetools module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="defaulttoolmenus.html">defaulttoolmenus module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="defaulttools.html">defaulttools module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="digitalassetsupport.html">digitalassetsupport module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="displaymessage.html">displaymessage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dopclothproxy.html">dopclothproxy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dopclothtoolutils.html">dopclothtoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dopfetoolutils.html">dopfetoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dopgeofiltertoolutils.html">dopgeofiltertoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dopinstance.html">dopinstance module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dopparticlefluidtoolutils.html">dopparticlefluidtoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doppoptoolutils.html">doppoptoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doppyrotoolutils.html">doppyrotoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doprbdtoolutils.html">doprbdtoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dopreltoolutils.html">dopreltoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dopsbdtoolutils.html">dopsbdtoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dopsmoketoolutils.html">dopsmoketoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dopstatictoolutils.html">dopstatictoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doptoolutils.html">doptoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dopwiretoolutils.html">dopwiretoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dragdroputils.html">dragdroputils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drivertoolutils.html">drivertoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expression_functions.html">expression_functions package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="expression_functions.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expression_functions.html#module-expression_functions.exprhelper">expression_functions.exprhelper module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expression_functions.html#module-expression_functions.matrix">expression_functions.matrix module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expression_functions.html#module-expression_functions.opdigits">expression_functions.opdigits module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expression_functions.html#module-expression_functions.vector">expression_functions.vector module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="expression_functions.html#module-expression_functions">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="fileutils.html">fileutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="furtoolutils.html">furtoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="furutils.html">furutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gasresizedynamic.html">gasresizedynamic module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generateHDAToolsForOTL.html">generateHDAToolsForOTL module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generate_proto.html">generate_proto module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hdefereval.html">hdefereval module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hjsonrpc.html">hjsonrpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hotkeys.html">hotkeys package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="hotkeys.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hotkeys.html#hotkeys-mainwidget-module">hotkeys.mainwidget module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hotkeys.html#hotkeys-widgets-module">hotkeys.widgets module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hotkeys.html#module-hotkeys">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="hou.html">hou module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="houdiniInterpreter.html">houdiniInterpreter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="houdiniengineutils.html">houdiniengineutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="houdinihelp.html">houdinihelp package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp.api">houdinihelp.api module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#houdinihelp-cli-module">houdinihelp.cli module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp.examples">houdinihelp.examples module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp.hcoloring">houdinihelp.hcoloring module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp.hconfig">houdinihelp.hconfig module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp.hotkeys">houdinihelp.hotkeys module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp.hpages">houdinihelp.hpages module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp.hsearch">houdinihelp.hsearch module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp.hstores">houdinihelp.hstores module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp.htextify">houdinihelp.htextify module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp.server">houdinihelp.server module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp.vex">houdinihelp.vex module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houdinihelp.html#module-houdinihelp">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="houdiniinternals.html">houdiniinternals module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="houpythonportion.html">houpythonportion package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="houpythonportion.qt.html">houpythonportion.qt package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-colorfield-module">houpythonportion.qt.ColorField module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-colorswatchbutton-module">houpythonportion.qt.ColorSwatchButton module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-combobox-module">houpythonportion.qt.ComboBox module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-dialog-module">houpythonportion.qt.Dialog module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-fieldlabel-module">houpythonportion.qt.FieldLabel module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-filechooserbutton-module">houpythonportion.qt.FileChooserButton module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-gridlayout-module">houpythonportion.qt.GridLayout module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-helpbutton-module">houpythonportion.qt.HelpButton module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-icon-module">houpythonportion.qt.Icon module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-inputfield-module">houpythonportion.qt.InputField module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-menu-module">houpythonportion.qt.Menu module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-menubar-module">houpythonportion.qt.MenuBar module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-menubutton-module">houpythonportion.qt.MenuButton module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-nodechooserbutton-module">houpythonportion.qt.NodeChooserButton module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-parmchooserbutton-module">houpythonportion.qt.ParmChooserButton module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-parmtuplechooserbutton-module">houpythonportion.qt.ParmTupleChooserButton module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-separator-module">houpythonportion.qt.Separator module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-tooltip-module">houpythonportion.qt.ToolTip module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-trackchooserbutton-module">houpythonportion.qt.TrackChooserButton module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#houpythonportion-qt-window-module">houpythonportion.qt.Window module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="houpythonportion.qt.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.Agent">houpythonportion.Agent module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.AgentClip">houpythonportion.AgentClip module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.AgentLayer">houpythonportion.AgentLayer module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.AgentRig">houpythonportion.AgentRig module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.AgentShapeBinding">houpythonportion.AgentShapeBinding module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.AgentShapeLibrary">houpythonportion.AgentShapeLibrary module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.AgentTransformGroup">houpythonportion.AgentTransformGroup module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.Geometry">houpythonportion.Geometry module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.HDADefinition">houpythonportion.HDADefinition module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.Keyframe">houpythonportion.Keyframe module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.NetworkDot">houpythonportion.NetworkDot module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.NetworkEditor">houpythonportion.NetworkEditor module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.NetworkMovableItem">houpythonportion.NetworkMovableItem module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.Node">houpythonportion.Node module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.Parm">houpythonportion.Parm module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.ParmTuple">houpythonportion.ParmTuple module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.PerfMonProfile">houpythonportion.PerfMonProfile module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.Prim">houpythonportion.Prim module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.StringKeyframe">houpythonportion.StringKeyframe module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.TopNode">houpythonportion.TopNode module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion.hda">houpythonportion.hda module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#houpythonportion-ui-module">houpythonportion.ui module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="houpythonportion.html#module-houpythonportion">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="houxmlrpc.html">houxmlrpc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hqrop.html">hqrop module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hqueue.html">hqueue package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="hqueue.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hqueue.html#module-hqueue.houdini">hqueue.houdini module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hqueue.html#module-hqueue.rendertrackerrpc">hqueue.rendertrackerrpc module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hqueue.html#module-hqueue.server">hqueue.server module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hqueue.html#module-hqueue.utils">hqueue.utils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hqueue.html#module-hqueue">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="hrpyc.html">hrpyc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hscp.html">hscp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="husd.html">husd package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="husd.UsdHoudini.html">husd.UsdHoudini package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="husd.UsdHoudini.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="husd.UsdMantra.html">husd.UsdMantra package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="husd.UsdMantra.html#module-husd.UsdMantra">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#module-husd.attrutils">husd.attrutils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#module-husd.parmutils">husd.parmutils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#module-husd.primpicker">husd.primpicker module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#module-husd.propcreator">husd.propcreator module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#module-husd.proppicker">husd.proppicker module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#module-husd.scenegraphdetails">husd.scenegraphdetails module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#module-husd.textviewer">husd.textviewer module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#module-husd.typeutils">husd.typeutils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#module-husd.utils">husd.utils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husd.html#module-husd">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="husdshadertranslators.html">husdshadertranslators package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="husdshadertranslators.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husdshadertranslators.html#module-husdshadertranslators.default">husdshadertranslators.default module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husdshadertranslators.html#module-husdshadertranslators.display">husdshadertranslators.display module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husdshadertranslators.html#module-husdshadertranslators.modulelister">husdshadertranslators.modulelister module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husdshadertranslators.html#module-husdshadertranslators.ris">husdshadertranslators.ris module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husdshadertranslators.html#module-husdshadertranslators.usd">husdshadertranslators.usd module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="husdshadertranslators.html#module-husdshadertranslators">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="hutil.html">hutil package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.Qt">hutil.Qt module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.api">hutil.api module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.cppinline">hutil.cppinline module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.daemon">hutil.daemon module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.debug">hutil.debug module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.enum">hutil.enum module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.file">hutil.file module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.ipaddress">hutil.ipaddress module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.json">hutil.json module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.log">hutil.log module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.parsecppsig">hutil.parsecppsig module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.pbkdf2">hutil.pbkdf2 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.pidfile">hutil.pidfile module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.pyrpc">hutil.pyrpc module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.username">hutil.username module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil.web">hutil.web module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hutil.html#module-hutil">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="images2gif.html">images2gif module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="images2gif.html#acknowledgements">Acknowledgements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="images2gif.html#usefull-links">Usefull links</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="inlinecpp.html">inlinecpp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introspect.html">introspect module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="karmautils.html">karmautils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lightpanel.html">lightpanel package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lightpanel.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lightpanel.html#lightpanel-lightpanel-module">lightpanel.lightpanel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lightpanel.html#lightpanel-lightpanel2-module">lightpanel.lightpanel2 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lightpanel.html#lightpanel-model-module">lightpanel.model module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lightpanel.html#lightpanel-widgets-module">lightpanel.widgets module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lightpanel.html#module-lightpanel">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="loadHelpcardOTLExample.html">loadHelpcardOTLExample module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loptoolutils.html">loptoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loputils.html">loputils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metaexpr.html">metaexpr module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mssbuild.html">mssbuild module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="muscletoolutils.html">muscletoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mvexportutils.html">mvexportutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraph.html">nodegraph module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphalign.html">nodegraphalign module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphautoscroll.html">nodegraphautoscroll module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphbase.html">nodegraphbase module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphconnect.html">nodegraphconnect module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphdisplay.html">nodegraphdisplay module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphdispopts.html">nodegraphdispopts module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphedittext.html">nodegraphedittext module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphfastfind.html">nodegraphfastfind module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphflags.html">nodegraphflags module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphfurutils.html">nodegraphfurutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphgestures.html">nodegraphgestures module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphhooks.html">nodegraphhooks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphhotkeys.html">nodegraphhotkeys module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphinfo.html">nodegraphinfo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphlayout.html">nodegraphlayout module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphpalettes.html">nodegraphpalettes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphpopupmenus.html">nodegraphpopupmenus module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphprefs.html">nodegraphprefs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphrename.html">nodegraphrename module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphselectpos.html">nodegraphselectpos module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphselectposhooks.html">nodegraphselectposhooks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphsnap.html">nodegraphsnap module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphstates.html">nodegraphstates module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphtitle.html">nodegraphtitle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphtopui.html">nodegraphtopui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphui.html">nodegraphui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphutils.html">nodegraphutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphvellumutils.html">nodegraphvellumutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodegraphview.html">nodegraphview module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodesearch.html">nodesearch package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="nodesearch.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nodesearch.html#module-nodesearch.matchers">nodesearch.matchers module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nodesearch.html#module-nodesearch.parser">nodesearch.parser module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nodesearch.html#module-nodesearch.query">nodesearch.query module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nodesearch.html#module-nodesearch.test_nodesearch">nodesearch.test_nodesearch module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nodesearch.html#module-nodesearch">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nodeselectionutil.html">nodeselectionutil module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodethemes.html">nodethemes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeutils.html">nodeutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="objecttoolutils.html">objecttoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opnode_sum.html">opnode_sum module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optixdownload.html">optixdownload module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paginate.html">paginate module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="paginate.html#paginate-helps-split-up-large-collections-into-individual-pages">paginate: helps split up large collections into individual pages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="paginate.html#what-is-pagination">What is pagination?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="parmutils.html">parmutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="particletoolutils.html">particletoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdg.html">pdg package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pdg.hda.html">pdg.hda package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="pdg.hda.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.hda.html#module-pdg.hda.hdaParms_pb2">pdg.hda.hdaParms_pb2 module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.hda.html#module-pdg.hda.savehda">pdg.hda.savehda module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.hda.html#module-pdg.hda">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="pdg.job.html">pdg.job package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#module-pdg.job.callbackserver">pdg.job.callbackserver module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#pdg-job-changelist-module">pdg.job.changelist module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#pdg-job-ffmpeg-module">pdg.job.ffmpeg module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#pdg-job-imagemagick-module">pdg.job.imagemagick module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#pdg-job-jsondata-module">pdg.job.jsondata module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#pdg-job-mantrarender-module">pdg.job.mantrarender module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#module-pdg.job.parmset_pb2">pdg.job.parmset_pb2 module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#module-pdg.job.rop">pdg.job.rop module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#module-pdg.job.shotgunclient">pdg.job.shotgunclient module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#module-pdg.job.status_pb2">pdg.job.status_pb2 module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#module-pdg.job.top">pdg.job.top module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#module-pdg.job.workitem_pb2">pdg.job.workitem_pb2 module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.job.html#module-pdg.job">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="pdg.testing.html">pdg.testing package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="pdg.testing.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.testing.html#module-pdg.testing.fake_shotgun_api3">pdg.testing.fake_shotgun_api3 module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="pdg.testing.html#module-pdg.testing">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.callback">pdg.callback module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.dependency">pdg.dependency module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.depthfirstcook">pdg.depthfirstcook module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.mapper">pdg.mapper module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.node">pdg.node module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.parms">pdg.parms module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.partitioner">pdg.partitioner module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.processor">pdg.processor module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.scheduler">pdg.scheduler module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.staticcook">pdg.staticcook module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.utils">pdg.utils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg.workitem">pdg.workitem module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdg.html#module-pdg">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pdgjob.html">pdgjob package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pdgjob.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdgjob.html#module-pdgjob.mayarpc">pdgjob.mayarpc module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdgjob.html#module-pdgjob.pdgcmd">pdgjob.pdgcmd module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdgjob.html#module-pdgjob.sharedserver">pdgjob.sharedserver module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdgjob.html#pdgjob-shotgunrpc-module">pdgjob.shotgunrpc module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdgjob.html#module-pdgjob">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="perfmon_sum.html">perfmon_sum module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poptoolutils.html">poptoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poselib.html">poselib package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-applywidget-module">poselib.applywidget module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-capturewidget-module">poselib.capturewidget module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-character-module">poselib.character module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-chopdata-module">poselib.chopdata module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-helpers-module">poselib.helpers module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-infowindow-module">poselib.infowindow module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-itembrowser-module">poselib.itembrowser module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-itemgrid-module">poselib.itemgrid module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-itemlibrary-module">poselib.itemlibrary module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-itemnavigator-module">poselib.itemnavigator module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-plglobals-module">poselib.plglobals module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-pose-module">poselib.pose module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-posebrowser-module">poselib.posebrowser module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-posegrid-module">poselib.posegrid module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-poselib-module">poselib.poselib module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#poselib-posemodel-module">poselib.posemodel module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#module-poselib.settings">poselib.settings module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poselib.html#module-poselib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="posespacedeform.html">posespacedeform package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="posespacedeform.ui.html">posespacedeform.ui package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="posespacedeform.ui.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="posespacedeform.ui.html#posespacedeform-ui-uiactions-module">posespacedeform.ui.uiActions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="posespacedeform.ui.html#posespacedeform-ui-uilineedit-module">posespacedeform.ui.uiLineEdit module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="posespacedeform.ui.html#posespacedeform-ui-uilineeditlist-module">posespacedeform.ui.uiLineEditList module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="posespacedeform.ui.html#posespacedeform-ui-uinavigation-module">posespacedeform.ui.uiNavigation module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="posespacedeform.ui.html#module-posespacedeform.ui.uiParamLabelButton">posespacedeform.ui.uiParamLabelButton module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="posespacedeform.ui.html#module-posespacedeform.ui.uiParamName">posespacedeform.ui.uiParamName module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="posespacedeform.ui.html#module-posespacedeform.ui.uiParamString">posespacedeform.ui.uiParamString module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="posespacedeform.ui.html#posespacedeform-ui-uitogglebutton-module">posespacedeform.ui.uiToggleButton module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="posespacedeform.ui.html#module-posespacedeform.ui">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="posespacedeform.utils.html">posespacedeform.utils package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="posespacedeform.utils.html#module-posespacedeform.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-builder-module">posespacedeform.Builder module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-buildgui-module">posespacedeform.buildGUI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-defaults-module">posespacedeform.defaults module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-driversgui-module">posespacedeform.driversGUI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-editgui-module">posespacedeform.editGUI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-initgui-module">posespacedeform.initGUI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-maingui-module">posespacedeform.mainGUI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-namegui-module">posespacedeform.nameGUI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-opengui-module">posespacedeform.openGUI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-poseshapegui-module">posespacedeform.poseshapeGUI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-psdgui-module">posespacedeform.psdGUI module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#posespacedeform-qtextendedclasses-module">posespacedeform.qtExtendedClasses module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="posespacedeform.html#module-posespacedeform">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="poster.html">poster package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="poster.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poster.html#module-poster.encode">poster.encode module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poster.html#module-poster.streaminghttp">poster.streaminghttp module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poster.html#module-poster">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pyro2.html">pyro2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickplanes.html">quickplanes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="radialmenu.html">radialmenu module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rendertracker.html">rendertracker module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rigtoolutils.html">rigtoolutils package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.boneiktwisttool">rigtoolutils.boneiktwisttool module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.boneiktwistuserinput">rigtoolutils.boneiktwistuserinput module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.fkcontrols">rigtoolutils.fkcontrols module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.fkikinterfacecontrol">rigtoolutils.fkikinterfacecontrol module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.ikbonestretch">rigtoolutils.ikbonestretch module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.iktwistcontrols">rigtoolutils.iktwistcontrols module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.iktwistnaming">rigtoolutils.iktwistnaming module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.iktwistnetworkeditor">rigtoolutils.iktwistnetworkeditor module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.iktwisttool">rigtoolutils.iktwisttool module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.iktwistuserinput">rigtoolutils.iktwistuserinput module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.randomnulls">rigtoolutils.randomnulls module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils.rigutils">rigtoolutils.rigutils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigtoolutils.html#module-rigtoolutils">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rmands.html">rmands module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="roptoolutils.html">roptoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sas.html">sas package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sas.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sas.html#module-sas.inspectasset">sas.inspectasset module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sas.html#module-sas.localassets">sas.localassets module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sas.html#module-sas.webresponder">sas.webresponder module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sas.html#module-sas">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="shadingutils.html">shadingutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shelfutils.html">shelfutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shopclerks.html">shopclerks package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="shopclerks.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shopclerks.html#module-shopclerks.clerkloader">shopclerks.clerkloader module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shopclerks.html#module-shopclerks.clerkutil">shopclerks.clerkutil module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shopclerks.html#module-shopclerks.i3dclerk">shopclerks.i3dclerk module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shopclerks.html#module-shopclerks.ifdclerk">shopclerks.ifdclerk module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shopclerks.html#module-shopclerks.ribclerk">shopclerks.ribclerk module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shopclerks.html#module-shopclerks.ribvstruct">shopclerks.ribvstruct module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shopclerks.html#module-shopclerks">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="shoptoolutils.html">shoptoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simtracker.html">simtracker module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skytoolutils.html">skytoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="soptoolutils.html">soptoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="soputils.html">soputils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stateutils.html">stateutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stroketoolutils.html">stroketoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="terraintoolutils.html">terraintoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toolprompts.html">toolprompts module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toolutils.html">toolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toptoolutils.html">toptoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="uiutils.html">uiutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vexpressionmenu.html">vexpressionmenu module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewerstate.html">viewerstate package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="viewerstate.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="viewerstate.html#module-viewerstate.interface">viewerstate.interface module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="viewerstate.html#module-viewerstate.utils">viewerstate.utils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="viewerstate.html#module-viewerstate">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="volumetoolutils.html">volumetoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vopcallbacks.html">vopcallbacks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vopfxmenu.html">vopfxmenu module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vopnettoolutils.html">vopnettoolutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voptoolutils.html">voptoolutils module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="whoosh.html">whoosh package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="whoosh.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="whoosh.analysis.html">whoosh.analysis package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.analysis.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.analysis.html#module-whoosh.analysis.acore">whoosh.analysis.acore module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.analysis.html#module-whoosh.analysis.analyzers">whoosh.analysis.analyzers module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.analysis.html#module-whoosh.analysis.filters">whoosh.analysis.filters module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.analysis.html#module-whoosh.analysis.intraword">whoosh.analysis.intraword module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.analysis.html#module-whoosh.analysis.morph">whoosh.analysis.morph module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.analysis.html#module-whoosh.analysis.ngrams">whoosh.analysis.ngrams module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.analysis.html#module-whoosh.analysis.tokenizers">whoosh.analysis.tokenizers module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.analysis.html#module-whoosh.analysis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="whoosh.automata.html">whoosh.automata package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.automata.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.automata.html#module-whoosh.automata.fsa">whoosh.automata.fsa module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.automata.html#module-whoosh.automata.glob">whoosh.automata.glob module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.automata.html#module-whoosh.automata.lev">whoosh.automata.lev module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.automata.html#module-whoosh.automata.nfa">whoosh.automata.nfa module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.automata.html#module-whoosh.automata.reg">whoosh.automata.reg module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.automata.html#module-whoosh.automata">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="whoosh.codec.html">whoosh.codec package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.codec.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.codec.html#module-whoosh.codec.base">whoosh.codec.base module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.codec.html#module-whoosh.codec.memory">whoosh.codec.memory module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.codec.html#module-whoosh.codec.plaintext">whoosh.codec.plaintext module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.codec.html#module-whoosh.codec.whoosh3">whoosh.codec.whoosh3 module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.codec.html#module-whoosh.codec">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="whoosh.filedb.html">whoosh.filedb package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.filedb.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.filedb.html#module-whoosh.filedb.compound">whoosh.filedb.compound module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.filedb.html#module-whoosh.filedb.filestore">whoosh.filedb.filestore module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.filedb.html#module-whoosh.filedb.filetables">whoosh.filedb.filetables module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.filedb.html#module-whoosh.filedb.gae">whoosh.filedb.gae module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.filedb.html#module-whoosh.filedb.structfile">whoosh.filedb.structfile module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.filedb.html#module-whoosh.filedb">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4 current"><a class="reference internal" href="whoosh.lang.html">whoosh.lang package</a><ul class="current">
+<li class="toctree-l5 current"><a class="reference internal" href="whoosh.lang.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l6 current"><a class="current reference internal" href="#">whoosh.lang.snowball package</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#module-whoosh.lang.dmetaphone">whoosh.lang.dmetaphone module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#module-whoosh.lang.isri">whoosh.lang.isri module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#module-whoosh.lang.lovins">whoosh.lang.lovins module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#module-whoosh.lang.morph_en">whoosh.lang.morph_en module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#module-whoosh.lang.paicehusk">whoosh.lang.paicehusk module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#module-whoosh.lang.phonetic">whoosh.lang.phonetic module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#module-whoosh.lang.porter">whoosh.lang.porter module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#module-whoosh.lang.porter2">whoosh.lang.porter2 module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#module-whoosh.lang.stopwords">whoosh.lang.stopwords module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#module-whoosh.lang.wordnet">whoosh.lang.wordnet module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.lang.html#module-whoosh.lang">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="whoosh.matching.html">whoosh.matching package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.matching.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.matching.html#module-whoosh.matching.binary">whoosh.matching.binary module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.matching.html#module-whoosh.matching.combo">whoosh.matching.combo module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.matching.html#module-whoosh.matching.mcore">whoosh.matching.mcore module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.matching.html#module-whoosh.matching.wrappers">whoosh.matching.wrappers module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.matching.html#module-whoosh.matching">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="whoosh.qparser.html">whoosh.qparser package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.qparser.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.qparser.html#module-whoosh.qparser.common">whoosh.qparser.common module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.qparser.html#module-whoosh.qparser.dateparse">whoosh.qparser.dateparse module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.qparser.html#module-whoosh.qparser.default">whoosh.qparser.default module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.qparser.html#module-whoosh.qparser.plugins">whoosh.qparser.plugins module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.qparser.html#module-whoosh.qparser.syntax">whoosh.qparser.syntax module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.qparser.html#module-whoosh.qparser.taggers">whoosh.qparser.taggers module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.qparser.html#module-whoosh.qparser">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="whoosh.query.html">whoosh.query package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.query.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.query.html#module-whoosh.query.compound">whoosh.query.compound module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.query.html#module-whoosh.query.nested">whoosh.query.nested module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.query.html#module-whoosh.query.positional">whoosh.query.positional module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.query.html#module-whoosh.query.qcolumns">whoosh.query.qcolumns module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.query.html#module-whoosh.query.qcore">whoosh.query.qcore module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.query.html#module-whoosh.query.ranges">whoosh.query.ranges module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.query.html#module-whoosh.query.spans">whoosh.query.spans module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.query.html#module-whoosh.query.terms">whoosh.query.terms module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.query.html#module-whoosh.query.wrappers">whoosh.query.wrappers module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.query.html#module-whoosh.query">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="whoosh.support.html">whoosh.support package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.support.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.support.html#module-whoosh.support.base85">whoosh.support.base85 module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.support.html#module-whoosh.support.bench">whoosh.support.bench module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.support.html#module-whoosh.support.charset">whoosh.support.charset module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.support.html#module-whoosh.support.levenshtein">whoosh.support.levenshtein module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.support.html#module-whoosh.support.relativedelta">whoosh.support.relativedelta module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.support.html#module-whoosh.support.unicode">whoosh.support.unicode module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.support.html#module-whoosh.support">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="whoosh.util.html">whoosh.util package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#module-whoosh.util.cache">whoosh.util.cache module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#module-whoosh.util.filelock">whoosh.util.filelock module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#module-whoosh.util.loading">whoosh.util.loading module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#module-whoosh.util.numeric">whoosh.util.numeric module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#module-whoosh.util.numlists">whoosh.util.numlists module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#module-whoosh.util.testing">whoosh.util.testing module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#module-whoosh.util.text">whoosh.util.text module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#module-whoosh.util.times">whoosh.util.times module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#module-whoosh.util.varints">whoosh.util.varints module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#module-whoosh.util.versions">whoosh.util.versions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="whoosh.util.html#module-whoosh.util">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.classify">whoosh.classify module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.collectors">whoosh.collectors module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.columns">whoosh.columns module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.compat">whoosh.compat module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.externalsort">whoosh.externalsort module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.fields">whoosh.fields module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.formats">whoosh.formats module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.highlight">whoosh.highlight module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.idsets">whoosh.idsets module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.index">whoosh.index module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.legacy">whoosh.legacy module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.multiproc">whoosh.multiproc module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.reading">whoosh.reading module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.scoring">whoosh.scoring module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.searching">whoosh.searching module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.sorting">whoosh.sorting module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.spelling">whoosh.spelling module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.system">whoosh.system module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh.writing">whoosh.writing module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="whoosh.html#module-whoosh">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Houdini Python modules</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">python2.7libs</a> &raquo;</li>
+        
+          <li><a href="whoosh.html">whoosh package</a> &raquo;</li>
+        
+          <li><a href="whoosh.lang.html">whoosh.lang package</a> &raquo;</li>
+        
+      <li>whoosh.lang.snowball package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/whoosh.lang.snowball.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="whoosh-lang-snowball-package">
+<h1>whoosh.lang.snowball package<a class="headerlink" href="#whoosh-lang-snowball-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.bases">
+<span id="whoosh-lang-snowball-bases-module"></span><h2>whoosh.lang.snowball.bases module<a class="headerlink" href="#module-whoosh.lang.snowball.bases" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.danish">
+<span id="whoosh-lang-snowball-danish-module"></span><h2>whoosh.lang.snowball.danish module<a class="headerlink" href="#module-whoosh.lang.snowball.danish" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.dutch">
+<span id="whoosh-lang-snowball-dutch-module"></span><h2>whoosh.lang.snowball.dutch module<a class="headerlink" href="#module-whoosh.lang.snowball.dutch" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.english">
+<span id="whoosh-lang-snowball-english-module"></span><h2>whoosh.lang.snowball.english module<a class="headerlink" href="#module-whoosh.lang.snowball.english" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.finnish">
+<span id="whoosh-lang-snowball-finnish-module"></span><h2>whoosh.lang.snowball.finnish module<a class="headerlink" href="#module-whoosh.lang.snowball.finnish" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.french">
+<span id="whoosh-lang-snowball-french-module"></span><h2>whoosh.lang.snowball.french module<a class="headerlink" href="#module-whoosh.lang.snowball.french" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.german">
+<span id="whoosh-lang-snowball-german-module"></span><h2>whoosh.lang.snowball.german module<a class="headerlink" href="#module-whoosh.lang.snowball.german" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.hungarian">
+<span id="whoosh-lang-snowball-hungarian-module"></span><h2>whoosh.lang.snowball.hungarian module<a class="headerlink" href="#module-whoosh.lang.snowball.hungarian" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.italian">
+<span id="whoosh-lang-snowball-italian-module"></span><h2>whoosh.lang.snowball.italian module<a class="headerlink" href="#module-whoosh.lang.snowball.italian" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.norwegian">
+<span id="whoosh-lang-snowball-norwegian-module"></span><h2>whoosh.lang.snowball.norwegian module<a class="headerlink" href="#module-whoosh.lang.snowball.norwegian" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.portugese">
+<span id="whoosh-lang-snowball-portugese-module"></span><h2>whoosh.lang.snowball.portugese module<a class="headerlink" href="#module-whoosh.lang.snowball.portugese" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.romanian">
+<span id="whoosh-lang-snowball-romanian-module"></span><h2>whoosh.lang.snowball.romanian module<a class="headerlink" href="#module-whoosh.lang.snowball.romanian" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.russian">
+<span id="whoosh-lang-snowball-russian-module"></span><h2>whoosh.lang.snowball.russian module<a class="headerlink" href="#module-whoosh.lang.snowball.russian" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.spanish">
+<span id="whoosh-lang-snowball-spanish-module"></span><h2>whoosh.lang.snowball.spanish module<a class="headerlink" href="#module-whoosh.lang.snowball.spanish" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball.swedish">
+<span id="whoosh-lang-snowball-swedish-module"></span><h2>whoosh.lang.snowball.swedish module<a class="headerlink" href="#module-whoosh.lang.snowball.swedish" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+<div class="section" id="module-whoosh.lang.snowball">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-whoosh.lang.snowball" title="Permalink to this headline">¶</a></h2>
+<p>Used by autodoc_mock_imports.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="whoosh.matching.html" class="btn btn-neutral float-right" title="whoosh.matching package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="whoosh.lang.html" class="btn btn-neutral" title="whoosh.lang package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, jtomori
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
