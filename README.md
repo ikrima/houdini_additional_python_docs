@@ -11,7 +11,7 @@ If you did some scripting in Houdini, then chances are that you have found [*too
 
 As it turns out there are some handy modules coming with Houdini, but they can be a bit hidden to many users. So I decided to do a small project and auto-generate documentation from docstrings from those modules. I used [*Sphinx*](http://www.sphinx-doc.org/en/master/) for this.
 
-Current documentation was generated from `Houdini 16.5.496`
+Current documentation was generated from `Houdini 17.5.226`
 <br><br>
 
 Update
